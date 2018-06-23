@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1e0e3af8-ac68-4e4e-a7ff-39b41ead9185" name="Planning" linkedPackageId="30e821d7-1bf1-4831-b700-0eb1147c2de9" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="8a9aec52-ae60-4176-8180-b96405bb0286">
+      <elementDefinition Id="eeff52df-4baa-4066-9b34-3af4280612f0" />
+      <body>A jobless minimally educated person.
+- Earn money by testing corporate software.</body>
+      <annotatedElements>
+        <actorMoniker Id="a47ac51a-f6f8-4598-a9e9-91a6d894b925" LastKnownName="External Tester" />
+      </annotatedElements>
+    </comment>
+    <comment Id="35c124d7-97a5-4c35-bf36-833d12ccb181">
+      <elementDefinition Id="a562ec7d-c9e1-48bc-a527-5b7f34106da0" />
+      <body>Manages testing for specific projects.
+Manage requirements, specifications and test reporting</body>
+      <annotatedElements>
+        <actorMoniker Id="7c2ce66c-ea92-4e4e-813f-1d06974db690" LastKnownName="External Corporate Testing Manager" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="9c2f492a-02c9-4e9b-ac10-c5155c2a0c05">
+      <profileInstance Id="d46b9016-ee85-46ee-820a-3cebae19957d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="968ff750-9bdd-4054-b02f-d86e6bd34ac7">
+      <profileInstance Id="91427b5e-dbaa-4d3d-887c-f014105676b0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="96ae64cd-40cd-4028-bc8a-ed358458fec7" name="QAManagement" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="bc2cb408-04a1-4ff9-90e4-f3737454e894">
+            <elementDefinition Id="05035dd1-cf6a-4a66-a400-50c650f912e0" />
+            <body>The application would be used to create testing jobs for people with minimal education.
+It would manage the testing interactions with specific corporate sites and produce reports.
+</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="578d050a-39ef-4ca1-916c-f58829837524" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7c2ce66c-ea92-4e4e-813f-1d06974db690" name="External Corporate Testing Manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="46176a16-c006-4d53-9d40-f5dda55a18e7" />
+        <targetEnds>
+          <association Id="5dcda3fa-a59c-4dd7-8022-a0cc24eea532" isDerived="false" sourceEndRoleName="Corporate Testing Manager" targetEndRoleName="QAManagement" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="96ae64cd-40cd-4028-bc8a-ed358458fec7" LastKnownName="QAManagement" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f24a58ef-c8b9-4c87-b4fc-d209ab7bb80c" name="Corporate Testing Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1da4495b-17bc-422c-9c73-122ab8e989c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="545e1416-55d6-4f9c-8a06-94dcaf995b9d" name="QAManagement" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ff640ea3-d3a4-4661-aa2b-074818392e55" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="64fbab9c-13b1-4a8a-b408-396d639b4133" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="a47ac51a-f6f8-4598-a9e9-91a6d894b925" name="External Tester" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e4013050-674f-4108-bcd8-36a8e97648b1" />
+        <targetEnds>
+          <association Id="e29d8777-1a2e-4b25-97cd-5d5880a2fe85" isDerived="false" sourceEndRoleName="Tester" targetEndRoleName="QAManagement" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="96ae64cd-40cd-4028-bc8a-ed358458fec7" LastKnownName="QAManagement" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc51e947-82fc-4d3e-9455-64be0094054d" name="Tester" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9bf47915-c3f2-447a-9c05-5c522945f033" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c8ab5aaf-74da-4aec-b2bd-6c2748a7b7bf" name="QAManagement" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="35677896-738d-48d3-89cf-d031c890a4c4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9b2c83ce-49c3-4c01-81bf-65dd15c9bb75" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="30e821d7-1bf1-4831-b700-0eb1147c2de9" name="QAManagement.Model">
+    <elementDefinition Id="cba51ad3-2442-4ba7-8f4b-31e5d52a3c00" />
+  </package>
+</useCaseModelRoot>

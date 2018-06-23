@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c8582762-98c7-4737-b998-15fcfd04b4a2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="1a6a74a6-fbb1-4a11-9ad8-40a030879440" name="Website">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="62daf4e9-fe13-4047-a1ab-cc41094559d7" direction="Bidirectional">
+          <layerMoniker Id="33547c0e-0446-4362-bf3a-fe4ab1ad984e" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="397644d2-4643-4e9f-a3e0-9a77cc2630e2" name="Database&#xD;&#xA;" />
+    <layer Id="2ecceaee-5cca-4892-80ee-2d0d39be2c8b" name="Windows Testing Agent&#xD;&#xA;">
+      <childLayers>
+        <layer Id="62dc957b-a694-425e-af0b-9a6ed9993bd5" name="Local Storage&#xD;&#xA;" />
+      </childLayers>
+    </layer>
+    <layer Id="0158a3b2-5184-473c-a552-f5f509fceddd" name="WCF Layer&#xD;&#xA;Model Layer&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="04446f63-4c4d-4fe9-b076-7bdf6e487b15" direction="Bidirectional">
+          <layerMoniker Id="397644d2-4643-4e9f-a3e0-9a77cc2630e2" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="33547c0e-0446-4362-bf3a-fe4ab1ad984e" name="View Layer&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="e708b46a-e060-4566-9e9f-1e0097ad5fea" direction="Bidirectional">
+          <layerMoniker Id="0158a3b2-5184-473c-a552-f5f509fceddd" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="6c922fd8-333b-4689-803a-95fe6301f90c" direction="Bidirectional">
+          <layerMoniker Id="2ecceaee-5cca-4892-80ee-2d0d39be2c8b" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+  </layers>
+</layerModel>

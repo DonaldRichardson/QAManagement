@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e3f281a7-a070-4624-a2c0-916a7e22bc23" name="Manage Project Details" linkedPackageId="04a06811-0af9-4749-ad29-ff2144577a95" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="fba5e1f2-0e25-4734-bb3c-2132f26daff3">
+      <profileInstance Id="66132728-b561-470f-9854-13c70aa65512" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="af5963a2-02df-4030-96b3-5434e4ebd2a4">
+      <profileInstance Id="a91f625a-48e6-4968-ba0c-b51ca25c8b74" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="38c3453f-2340-4194-bc7c-7ba1077e7238" name="External Corporate Testing Manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="46176a16-c006-4d53-9d40-f5dda55a18e7" />
+        <targetEnds>
+          <association Id="c9ca0833-4779-4590-92fa-5d7ab2c70903" isDerived="false" sourceEndRoleName="External Corporate Testing Manager" targetEndRoleName="Manage Project Details" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4222ea4b-e112-422d-8c9d-1b7ad7264862" LastKnownName="Manage Project Details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8831ebcf-a190-4ed4-ba23-725817927f51" name="External Corporate Testing Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="29edd3c9-3c0e-4246-9dcd-a985bf6c74c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1b24a4b9-5e66-444f-b0ec-f0b78eb9e5f4" name="Manage Project Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="33425ebd-f06d-449b-9a9b-c04cc62ba65d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="67d8b032-2eb7-4248-9afb-9eb4c771affe" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4222ea4b-e112-422d-8c9d-1b7ad7264862" name="Manage Project Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="054d3023-8d83-4700-81d3-24363a3a656f" />
+        <additions>
+          <include Id="25436550-f715-4862-8f37-0dd3b9a9e894">
+            <useCaseMoniker Id="cc366aed-a23e-42c6-9bc7-0d49263f499e" LastKnownName="CRUD Projects" />
+            <elementDefinition Id="b2da2102-5d1f-47e2-8880-382ccbb895c5" />
+          </include>
+          <include Id="36633c89-d21d-44f1-8c8a-683a9920fca7">
+            <useCaseMoniker Id="700100a0-d057-49fc-9897-7fbd56eeaeb6" LastKnownName="CRUD Requirements" />
+            <elementDefinition Id="912a29f2-5fae-462e-b2df-b51682efde49" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cc366aed-a23e-42c6-9bc7-0d49263f499e" name="CRUD Projects" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="67ab4806-e484-47e1-a5da-0e8c6668b291" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="700100a0-d057-49fc-9897-7fbd56eeaeb6" name="CRUD Requirements" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="80c2efd9-94b4-4788-9c63-a6be3951c3e4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="04a06811-0af9-4749-ad29-ff2144577a95" name="QAManagement.Model">
+    <elementDefinition Id="cba51ad3-2442-4ba7-8f4b-31e5d52a3c00" />
+  </package>
+</useCaseModelRoot>

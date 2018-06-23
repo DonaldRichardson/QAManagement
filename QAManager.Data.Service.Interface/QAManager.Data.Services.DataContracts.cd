@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="QAManagement.Data.Services.DataContracts.Comment" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommentsContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QAManagement.Data.Services.DataContracts.Users" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASQAAAAAACIAgAABIQAEQAAAAwAAAAAiAAAAgAAAAAA=</HashCode>
+      <FileName>UsersContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QAManagement.Data.Services.DataContracts.Company" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAACggBABJAAEAAQAAAAABAACAAAAAAAAAAI=</HashCode>
+      <FileName>CompanyContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QAManagement.Data.Services.DataContracts.PaymentPoints" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaymentPointsContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QAManagement.Data.Services.DataContracts.Project" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIggAAAAAAAAAQAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ProjectContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QAManagement.Data.Services.DataContracts.ProjectUsers" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAgABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProjectUsersContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QAManagement.Data.Services.DataContracts.Requirement" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABggAAAAFAACAACBAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>RequirementContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QAManagement.Data.Services.DataContracts.Step" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAggAAAAEAAAAQAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StepContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QAManagement.Data.Services.DataContracts.TestResult" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAQAgAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestResultContract.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QAManager.Data.Services.DataContracts.BaseContract" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseContract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="QAManager.Data.Services.DataContracts.ICommentContract" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICommentContract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QAManager.Data.Services.DataContracts.ICompanyContract" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICompanyContract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QAManager.Data.Services.DataContracts.IPaymentPointContract" Collapsed="true">
+    <Position X="14" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPaymentPointContract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QAManager.Data.Services.DataContracts.IProjectContract" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IProjectContract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QAManager.Data.Services.DataContracts.IProjectUserContract" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IProjectUserContract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QAManager.Data.Services.DataContracts.IRequirementContract" Collapsed="true">
+    <Position X="16.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IRequirementContract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QAManager.Data.Services.DataContracts.IStepContract" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IStepContract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QAManager.Data.Services.DataContracts.ITestResultContract" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITestResultContract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QAManager.Data.Services.DataContracts.IUserContract" Collapsed="true">
+    <Position X="18.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IUserContract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QAManager.Data.Services.DataContracts.IBaseContract" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBaseContract.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="cba51ad3-2442-4ba7-8f4b-31e5d52a3c00"
+  name="QAManagement.Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="05035dd1-cf6a-4a66-a400-50c650f912e0">
+      <body>The application would be used to create testing jobs for people with minimal education.
+It would manage the testing interactions with specific corporate sites and produce reports.
+</body>
+    </comment>
+    <comment
+      Id="eeff52df-4baa-4066-9b34-3af4280612f0">
+      <body>A jobless minimally educated person.
+- Earn money by testing corporate software.</body>
+      <annotatedElements>
+        <actorMoniker
+          Id="e4013050-674f-4108-bcd8-36a8e97648b1"
+          LastKnownName="External Tester"
+          LastKnownLocation="QAManagement.Model.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="a562ec7d-c9e1-48bc-a527-5b7f34106da0">
+      <body>Manages testing for specific projects.
+Manage requirements, specifications and test reporting</body>
+      <annotatedElements>
+        <actorMoniker
+          Id="46176a16-c006-4d53-9d40-f5dda55a18e7"
+          LastKnownName="External Corporate Testing Manager"
+          LastKnownLocation="QAManagement.Model.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <subsystem
+        Id="578d050a-39ef-4ca1-916c-f58829837524"
+        name="QAManagement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="46176a16-c006-4d53-9d40-f5dda55a18e7"
+        name="External Corporate Testing Manager"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="64fbab9c-13b1-4a8a-b408-396d639b4133"
+            isDerived="false"
+            sourceEndRoleName="Corporate Testing Manager"
+            targetEndRoleName="QAManagement"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="578d050a-39ef-4ca1-916c-f58829837524"
+              LastKnownName="QAManagement"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1da4495b-17bc-422c-9c73-122ab8e989c3"
+                  name="Corporate Testing Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff640ea3-d3a4-4661-aa2b-074818392e55"
+                  name="QAManagement"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7c15ed33-b910-480c-83a9-f41e743e14de"
+            isDerived="false"
+            sourceEndRoleName="External Corporate Testing Manager"
+            targetEndRoleName="Logon to QA Management Site"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="16c1b40d-e49b-48b8-a4e6-2da3d0e16de8"
+              LastKnownName="Logon to QA Management Site"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e8a318a1-d2af-4d7f-a61c-897cc8b342b9"
+                  name="External Corporate Testing Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ee32190-ea0d-46ef-8d2e-6a0b71900dad"
+                  name="Logon to QA Management Site"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="30e933d8-edff-4e4f-b82e-ad80491c4532"
+            isDerived="false"
+            sourceEndRoleName="External Corporate Testing Manager"
+            targetEndRoleName="Manage Company Details"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="51467779-6194-4c46-850f-62d6a9ab15b7"
+              LastKnownName="Manage Company Details"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7e0f083-a414-454d-860d-475e03078ed2"
+                  name="External Corporate Testing Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1bfa4d62-7cdd-4623-bbb6-7c227cc775bc"
+                  name="Manage Company Details"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="67d8b032-2eb7-4248-9afb-9eb4c771affe"
+            isDerived="false"
+            sourceEndRoleName="External Corporate Testing Manager"
+            targetEndRoleName="Manage Project Details"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="054d3023-8d83-4700-81d3-24363a3a656f"
+              LastKnownName="Manage Project Details"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="29edd3c9-3c0e-4246-9dcd-a985bf6c74c2"
+                  name="External Corporate Testing Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="33425ebd-f06d-449b-9a9b-c04cc62ba65d"
+                  name="Manage Project Details"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="150eb86b-c39a-4d33-8671-15d5d59a2666"
+            isDerived="false"
+            sourceEndRoleName="External Corporate Testing Manager"
+            targetEndRoleName="View Reports"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e25928fe-8489-4c53-a3a7-6facc16346f1"
+              LastKnownName="View Reports"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="69c0ba96-0264-4844-b49e-3951b330eed2"
+                  name="External Corporate Testing Manager"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56b02e21-e899-4ddc-92c0-074f35fdff40"
+                  name="View Reports"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e4013050-674f-4108-bcd8-36a8e97648b1"
+        name="External Tester"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9b2c83ce-49c3-4c01-81bf-65dd15c9bb75"
+            isDerived="false"
+            sourceEndRoleName="Tester"
+            targetEndRoleName="QAManagement"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="578d050a-39ef-4ca1-916c-f58829837524"
+              LastKnownName="QAManagement"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9bf47915-c3f2-447a-9c05-5c522945f033"
+                  name="Tester"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35677896-738d-48d3-89cf-d031c890a4c4"
+                  name="QAManagement"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2e52a295-c56c-4012-94b1-afb2a0700d3b"
+            isDerived="false"
+            sourceEndRoleName="External Tester"
+            targetEndRoleName="Logon to QA Management Site"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="16c1b40d-e49b-48b8-a4e6-2da3d0e16de8"
+              LastKnownName="Logon to QA Management Site"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6278b7ef-c387-47c1-941d-71cfa000c375"
+                  name="External Tester"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8aa14376-e077-4c79-af20-5f2e51adaea1"
+                  name="Logon to QA Management Site"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8e299eef-6b3d-4ff2-8525-f96989bf8bbf"
+            isDerived="false"
+            sourceEndRoleName="External Tester"
+            targetEndRoleName="Manage Username and password"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f49969d7-339b-4e08-9a18-91fa49121c92"
+              LastKnownName="Manage Username and password"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5882a634-634d-4f93-9e21-a6f954c0dc08"
+                  name="External Tester"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="26d0038e-03be-45a7-9ea3-94d211bf6d1f"
+                  name="Manage Username and password"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="46b2d34c-8e73-41c2-8175-fb2c0af28c73"
+            isDerived="false"
+            sourceEndRoleName="External Tester"
+            targetEndRoleName="View Reports"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e25928fe-8489-4c53-a3a7-6facc16346f1"
+              LastKnownName="View Reports"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1540d4e8-29d7-419e-992f-245478d31318"
+                  name="External Tester"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="454c4f55-e179-436a-9085-30653c1b2839"
+                  name="View Reports"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6db9eab3-5d15-4673-88a6-0c7526e9fd1d"
+            isDerived="false"
+            sourceEndRoleName="External Tester"
+            targetEndRoleName="Manage User Details"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c4fc1f82-339d-4520-86fe-d1f3c8dc35d9"
+              LastKnownName="Manage User Details"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="654c49d9-8efd-40cb-bba8-53e1279a13c2"
+                  name="External Tester"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df06299f-48a8-4403-9620-6c459f6ca69b"
+                  name="Manage User Details"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ed463d1b-2d90-480c-9ddd-a5696a6d6534"
+            isDerived="false"
+            sourceEndRoleName="External Tester"
+            targetEndRoleName="Manage Remuneration Points"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0c6a3810-40ca-4360-9e43-893b3779d32c"
+              LastKnownName="Manage Remuneration Points"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d7529d12-a20b-4f54-aeb5-1e7954bb40aa"
+                  name="External Tester"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a74d24cd-4542-48ee-a285-2623c32e6d54"
+                  name="Manage Remuneration Points"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5d381abd-af55-488d-b25d-062bc0b35644"
+            isDerived="false"
+            sourceEndRoleName="External Tester"
+            targetEndRoleName="Manage User Testing"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4e09f3cb-f8d7-46b8-8388-96f49094860a"
+              LastKnownName="Manage User Testing"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fbe2bb12-316f-477f-8805-dce50d9a9d78"
+                  name="External Tester"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23263ae6-32f1-43a0-be00-b9ff910222ca"
+                  name="Manage User Testing"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="16c1b40d-e49b-48b8-a4e6-2da3d0e16de8"
+        name="Logon to QA Management Site"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="fcbff8c0-63d5-4c17-8f96-0d807dcb8811">
+            <useCaseMoniker
+              Id="f5be84bd-16bb-4048-9bad-4253cd768563"
+              LastKnownName="Password Management"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+          <include
+            Id="6f7eb33f-0f68-4e6d-b0c0-48902f3f1809">
+            <useCaseMoniker
+              Id="2750b895-8422-491f-a7e3-0f33bd9f606a"
+              LastKnownName="Check Username and password"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+          <include
+            Id="04cf4a01-1b81-4d4e-8cb5-5cd1b6526115">
+            <useCaseMoniker
+              Id="5a3ffaf7-d8a2-4c8e-85e6-5db025c49ec6"
+              LastKnownName="Reset username and password"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+          <include
+            Id="d1b956e9-7b3b-465b-a9c3-a3a08f781131">
+            <useCaseMoniker
+              Id="f49969d7-339b-4e08-9a18-91fa49121c92"
+              LastKnownName="Manage Username and password"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+          <include
+            Id="073af1c0-3ef0-42e7-9032-1c29899c9154">
+            <useCaseMoniker
+              Id="e7ca755e-9fc6-4020-99bb-f313725fe524"
+              LastKnownName="Go to Corporate or Tester Site"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="51467779-6194-4c46-850f-62d6a9ab15b7"
+        name="Manage Company Details"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="8ab88a96-21c7-4cc3-9740-5395969ae5a0">
+            <useCaseMoniker
+              Id="fbbe6ae1-fc0c-4f7f-a951-0175663895a0"
+              LastKnownName="CRUD Company Details"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="054d3023-8d83-4700-81d3-24363a3a656f"
+        name="Manage Project Details"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="b2da2102-5d1f-47e2-8880-382ccbb895c5">
+            <useCaseMoniker
+              Id="67ab4806-e484-47e1-a5da-0e8c6668b291"
+              LastKnownName="CRUD Projects"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+          <include
+            Id="912a29f2-5fae-462e-b2df-b51682efde49">
+            <useCaseMoniker
+              Id="80c2efd9-94b4-4788-9c63-a6be3951c3e4"
+              LastKnownName="CRUD Requirements"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e25928fe-8489-4c53-a3a7-6facc16346f1"
+        name="View Reports"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f5be84bd-16bb-4048-9bad-4253cd768563"
+        name="Password Management"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="85630f21-2bfb-4c29-965f-9f3714e0f3ae">
+            <useCaseMoniker
+              Id="1e2fec19-e971-49eb-b4d4-0ee790779b74"
+              LastKnownName="Reset Passwords"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1e2fec19-e971-49eb-b4d4-0ee790779b74"
+        name="Reset Passwords"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fbbe6ae1-fc0c-4f7f-a951-0175663895a0"
+        name="CRUD Company Details"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="67ab4806-e484-47e1-a5da-0e8c6668b291"
+        name="CRUD Projects"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="80c2efd9-94b4-4788-9c63-a6be3951c3e4"
+        name="CRUD Requirements"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2750b895-8422-491f-a7e3-0f33bd9f606a"
+        name="Check Username and password"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f49969d7-339b-4e08-9a18-91fa49121c92"
+        name="Manage Username and password"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="8c4d1cfa-36af-42b1-9fb3-fc948ac7ebce">
+            <useCaseMoniker
+              Id="1d31f961-7de6-4941-a542-9c59369d9f69"
+              LastKnownName="CRUD User Details"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5a3ffaf7-d8a2-4c8e-85e6-5db025c49ec6"
+        name="Reset username and password"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1d31f961-7de6-4941-a542-9c59369d9f69"
+        name="CRUD User Details"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e7ca755e-9fc6-4020-99bb-f313725fe524"
+        name="Go to Corporate or Tester Site"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="338fe309-3806-4054-991f-62fa387d4ad7"
+        name="Logon Use Case"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f16254dc-49d5-4e93-94c7-c42512d7e902"
+            isDerived="false"
+            sourceEndRoleName="Artifact1"
+            targetEndRoleName="Logon to QA Management Site"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="16c1b40d-e49b-48b8-a4e6-2da3d0e16de8"
+              LastKnownName="Logon to QA Management Site"
+              LastKnownLocation="QAManagement.Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a0bd537d-f272-4a5f-a306-48c854404328"
+                  name="Artifact1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2443288f-d0c8-4511-a7ad-fc4783ff4709"
+                  name="Logon to QA Management Site"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ecfe9242-94be-43b4-b7ca-3fff733e0487"
+        name="Start Testing"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="86e1ea59-b772-402b-8fdf-521fa920b224"
+        name="Resume Testing"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d9598b99-c234-4938-888c-352ed8fce0f0"
+        name="Re-Testing or test iterations"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c4fc1f82-339d-4520-86fe-d1f3c8dc35d9"
+        name="Manage User Details"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="04c6be1b-89d2-4ad6-a7bc-1cdf3e445058">
+            <useCaseMoniker
+              Id="8cafdac9-281e-44a5-8bf1-ab7222af6637"
+              LastKnownName="CRUD User Details"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0c6a3810-40ca-4360-9e43-893b3779d32c"
+        name="Manage Remuneration Points"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8cafdac9-281e-44a5-8bf1-ab7222af6637"
+        name="CRUD User Details"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4e09f3cb-f8d7-46b8-8388-96f49094860a"
+        name="Manage User Testing"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="46f38877-0270-4dca-94b5-467b4e125fe5">
+            <useCaseMoniker
+              Id="ecfe9242-94be-43b4-b7ca-3fff733e0487"
+              LastKnownName="Start Testing"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+          <include
+            Id="5a1f7c70-799f-4f08-a249-92693b20915e">
+            <useCaseMoniker
+              Id="86e1ea59-b772-402b-8fdf-521fa920b224"
+              LastKnownName="Resume Testing"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+          <include
+            Id="b9b54583-ed71-44ae-9c74-667452e284d4">
+            <useCaseMoniker
+              Id="d9598b99-c234-4938-888c-352ed8fce0f0"
+              LastKnownName="Re-Testing or test iterations"
+              LastKnownLocation="QAManagement.Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

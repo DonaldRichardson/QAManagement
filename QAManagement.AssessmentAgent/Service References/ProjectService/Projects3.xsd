@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QAManagement.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QAManagement.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:51/Projects.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:complexType name="ArrayOfProject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Project" nillable="true" type="tns:Project" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProject" nillable="true" type="tns:ArrayOfProject" />
+  <xs:complexType name="Project">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Company" nillable="true" type="tns:Company" />
+          <xs:element minOccurs="0" name="CompanyID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="CompanyReference" nillable="true" type="q1:EntityReferenceOfCompany0gTJnmO2" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Project1" nillable="true" type="tns:Project" />
+          <xs:element minOccurs="0" name="Project1Reference" nillable="true" type="q1:EntityReferenceOfProject0gTJnmO2" />
+          <xs:element minOccurs="0" name="Project2" nillable="true" type="tns:Project" />
+          <xs:element minOccurs="0" name="Project2Reference" nillable="true" type="q1:EntityReferenceOfProject0gTJnmO2" />
+          <xs:element minOccurs="0" name="ProjectUsers" nillable="true" type="tns:ArrayOfProjectUser" />
+          <xs:element minOccurs="0" name="Requirements" nillable="true" type="tns:ArrayOfRequirement" />
+          <xs:element minOccurs="0" name="TestingDepth" nillable="true" type="xs:unsignedByte" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Project" nillable="true" type="tns:Project" />
+  <xs:complexType name="Company">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q2:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactPerson" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactPersonNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OfficeEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OfficePhoneNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Projects" nillable="true" type="tns:ArrayOfProject" />
+          <xs:element minOccurs="0" name="Users" nillable="true" type="tns:ArrayOfUser" />
+          <xs:element minOccurs="0" name="Validated" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Company" nillable="true" type="tns:Company" />
+  <xs:complexType name="ArrayOfUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
+  <xs:complexType name="User">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q3:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountNo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Active" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Bank" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BranchCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CellNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Company" nillable="true" type="tns:Company" />
+          <xs:element minOccurs="0" name="CompanyID" type="xs:long" />
+          <xs:element minOccurs="0" name="CompanyReference" nillable="true" type="q3:EntityReferenceOfCompany0gTJnmO2" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentPoints" nillable="true" type="tns:ArrayOfPaymentPoint" />
+          <xs:element minOccurs="0" name="PaypointThreshold" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProjectUsers" nillable="true" type="tns:ArrayOfProjectUser" />
+          <xs:element minOccurs="0" name="Requirements" nillable="true" type="tns:ArrayOfRequirement" />
+          <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="ArrayOfPaymentPoint">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentPoint" nillable="true" type="tns:PaymentPoint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaymentPoint" nillable="true" type="tns:ArrayOfPaymentPoint" />
+  <xs:complexType name="PaymentPoint">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q4:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" name="Points" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="UserReference" nillable="true" type="q4:EntityReferenceOfUser0gTJnmO2" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PaymentPoint" nillable="true" type="tns:PaymentPoint" />
+  <xs:complexType name="ArrayOfProjectUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProjectUser" nillable="true" type="tns:ProjectUser" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProjectUser" nillable="true" type="tns:ArrayOfProjectUser" />
+  <xs:complexType name="ProjectUser">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q5:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" name="Project" nillable="true" type="tns:Project" />
+          <xs:element minOccurs="0" name="ProjectID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="ProjectReference" nillable="true" type="q5:EntityReferenceOfProject0gTJnmO2" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="UserReference" nillable="true" type="q5:EntityReferenceOfUser0gTJnmO2" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProjectUser" nillable="true" type="tns:ProjectUser" />
+  <xs:complexType name="ArrayOfRequirement">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Requirement" nillable="true" type="tns:Requirement" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRequirement" nillable="true" type="tns:ArrayOfRequirement" />
+  <xs:complexType name="Requirement">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q6:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" name="LongDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OwnedByUserID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="PassingDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Project" nillable="true" type="tns:Project" />
+          <xs:element minOccurs="0" name="ProjectID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="ProjectReference" nillable="true" type="q6:EntityReferenceOfProject0gTJnmO2" />
+          <xs:element minOccurs="0" name="Requirement1" nillable="true" type="tns:Requirement" />
+          <xs:element minOccurs="0" name="Requirement1Reference" nillable="true" type="q6:EntityReferenceOfRequirement0gTJnmO2" />
+          <xs:element minOccurs="0" name="Requirement2" nillable="true" type="tns:Requirement" />
+          <xs:element minOccurs="0" name="Requirement2Reference" nillable="true" type="q6:EntityReferenceOfRequirement0gTJnmO2" />
+          <xs:element minOccurs="0" name="SpecificationReference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Steps" nillable="true" type="tns:ArrayOfStep" />
+          <xs:element minOccurs="0" name="TestResults" nillable="true" type="tns:ArrayOfTestResult" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserReference" nillable="true" type="q6:EntityReferenceOfUser0gTJnmO2" />
+          <xs:element minOccurs="0" name="Weighting" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Requirement" nillable="true" type="tns:Requirement" />
+  <xs:complexType name="ArrayOfStep">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Step" nillable="true" type="tns:Step" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStep" nillable="true" type="tns:ArrayOfStep" />
+  <xs:complexType name="Step">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q7:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" name="IsTest" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Number" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Requirement" nillable="true" type="tns:Requirement" />
+          <xs:element minOccurs="0" name="RequirementID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="RequirementReference" nillable="true" type="q7:EntityReferenceOfRequirement0gTJnmO2" />
+          <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Step" nillable="true" type="tns:Step" />
+  <xs:complexType name="ArrayOfTestResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TestResult" nillable="true" type="tns:TestResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTestResult" nillable="true" type="tns:ArrayOfTestResult" />
+  <xs:complexType name="TestResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q8:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ID" type="xs:long" />
+          <xs:element minOccurs="0" name="Pass" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Requirement" nillable="true" type="tns:Requirement" />
+          <xs:element minOccurs="0" name="RequirementID" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="RequirementReference" nillable="true" type="q8:EntityReferenceOfRequirement0gTJnmO2" />
+          <xs:element minOccurs="0" name="Results" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TestResult" nillable="true" type="tns:TestResult" />
+</xs:schema>

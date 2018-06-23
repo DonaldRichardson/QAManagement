@@ -1,0 +1,34 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<%--PageHeader---%>
+<asp:Label  SkinID="PageHeader" runat="server" Font-Names="arial" Font-Size="X-Large">
+</asp:Label>
+<asp:Panel  SkinID="PageHeader" runat="server" BorderWidth="1px" BorderStyle="Inset">
+</asp:Panel>
+
+<%--END PageHeader--%>
+
+<asp:LinkButton SkinID="LinkHeader" runat="server" Font-Names="arial" Font-Size="Small"></asp:LinkButton>
+<asp:DropDownList runat="server" Font-Names="arial" Font-Size="X-Small" ></asp:DropDownList>
+ <asp:TextBox runat="server" Font-Names="arial" Font-Size="X-Small" />
+
+<asp:GridView runat="server" GridLines="None" Font-Names="arial" Font-Size="X-Small">
+    <HeaderStyle HorizontalAlign="Left" />
+</asp:GridView>
+
+<asp:FormView runat="server" CaptionAlign="Left" Font-Names="arial" Font-Size="X-Small">
+</asp:FormView>

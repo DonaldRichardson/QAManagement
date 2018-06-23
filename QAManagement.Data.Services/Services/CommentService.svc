@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="QAManagement.Data.Services.CommentService" CodeBehind="CommentService.svc.cs" %>

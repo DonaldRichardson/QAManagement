@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10BBFA2A-7557-4423-BD96-D4408EEBAE22}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QAManagement.Views</RootNamespace>
+    <AssemblyName>QAManagement.Views</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'VDebuf|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\VDebuf\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\QAManagement.Views.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'VDebug|AnyCPU'">
+    <OutputPath>bin\VDebug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'visual|AnyCPU'">
+    <OutputPath>bin\visual\</OutputPath>
+    <DefineConstants>visual</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Views\baseView.cs" />
+    <Compile Include="ProviderInterfaces\ICompanyProvider.cs" />
+    <Compile Include="ProviderInterfaces\IPaymentPointsProvider.cs" />
+    <Compile Include="ProviderInterfaces\IProjectProvider.cs" />
+    <Compile Include="ProviderInterfaces\IProjectUserProvider.cs" />
+    <Compile Include="ProviderInterfaces\IRequirementProvider.cs" />
+    <Compile Include="ProviderInterfaces\IStepProvider.cs" />
+    <Compile Include="ProviderInterfaces\ITestResultProvider.cs" />
+    <Compile Include="ProviderInterfaces\IUsersProvider.cs" />
+    <Compile Include="ProviderInterfaces\IBaseProvider.cs" />
+    <Compile Include="ProviderInterfaces\IBaseView.cs" />
+    <Compile Include="ProviderInterfaces\ICommentProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Providers\baseProvider.cs" />
+    <Compile Include="Providers\CommentsProvider.cs" />
+    <Compile Include="Providers\CompanyProvider.cs" />
+    <Compile Include="Providers\PaymentPointsProvider.cs" />
+    <Compile Include="Providers\ProjectProvider.cs" />
+    <Compile Include="Providers\ProjectUsersProvider.cs" />
+    <Compile Include="Providers\RequirementProvider.cs" />
+    <Compile Include="Providers\StepProvider.cs" />
+    <Compile Include="Providers\TestResultProvider.cs" />
+    <Compile Include="Providers\UsersProvider.cs" />
+    <Compile Include="OldViews\CommentsView.cs" />
+    <Compile Include="OldViews\CompanyView.cs" />
+    <Compile Include="OldViews\PaymentPointsView.cs" />
+    <Compile Include="OldViews\ProjectUsersView.cs" />
+    <Compile Include="OldViews\ProjectView.cs" />
+    <Compile Include="OldViews\RequirementView.cs" />
+    <Compile Include="OldViews\StepView.cs" />
+    <Compile Include="OldViews\TestResultView.cs" />
+    <Compile Include="OldViews\UsersView.cs" />
+    <Compile Include="ViewInterfaces\IComments.cs" />
+    <Compile Include="ViewInterfaces\ICompany.cs" />
+    <Compile Include="ViewInterfaces\IPaymentPoints.cs" />
+    <Compile Include="ViewInterfaces\IProject.cs" />
+    <Compile Include="ViewInterfaces\IProjectUsers.cs" />
+    <Compile Include="ViewInterfaces\IRequirement.cs" />
+    <Compile Include="ViewInterfaces\IStep.cs" />
+    <Compile Include="ViewInterfaces\ITestResult.cs" />
+    <Compile Include="ViewInterfaces\IUser.cs" />
+    <Compile Include="Views\CommentsView.cs" />
+    <Compile Include="Views\CompanyView.cs" />
+    <Compile Include="Views\PaymentPointsView.cs" />
+    <Compile Include="Views\ProjectUsersView.cs" />
+    <Compile Include="Views\ProjectView.cs" />
+    <Compile Include="Views\RequirementView.cs" />
+    <Compile Include="Views\StepView.cs" />
+    <Compile Include="Views\TestResultView.cs" />
+    <Compile Include="Views\UsersView.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.Config" />
+    <None Include="Properties\DataSources\QAManagement.Data.Company.datasource" />
+    <None Include="Properties\DataSources\QAManagement.ViewModel.Company.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="QAManagement.Providers.cd" />
+    <None Include="QAManagement.Views.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QAManagement.Data.Services\QAManagement.Data.Services.csproj">
+      <Project>{73006EAF-E6A8-40F0-9ACC-1C034B43E4FB}</Project>
+      <Name>QAManagement.Data.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QAManager.Data.Service.Interface\QAManager.Data.Services.DataContracts.csproj">
+      <Project>{018F1D81-B21D-4429-AE3F-DB39582C11A5}</Project>
+      <Name>QAManager.Data.Services.DataContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5d3dc542-8f74-489d-8d57-eb9268470d91" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50115/Services/CommentService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CommentService.xsd" MetadataType="Schema" ID="272d1c84-11ba-460f-aae4-14e01669a83c" SourceId="1" SourceUrl="http://localhost:50115/Services/CommentService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CommentService1.xsd" MetadataType="Schema" ID="f2ce3691-78d9-48cd-b9d6-89bb840c38fe" SourceId="1" SourceUrl="http://localhost:50115/Services/CommentService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CommentService.wsdl" MetadataType="Wsdl" ID="0c1840df-cfe1-408f-936a-be6ec07bde4b" SourceId="1" SourceUrl="http://localhost:50115/Services/CommentService.svc?wsdl" />
+    <MetadataFile FileName="CommentService.disco" MetadataType="Disco" ID="980d620b-ba0a-45af-80d3-4228051ca6d8" SourceId="1" SourceUrl="http://localhost:50115/Services/CommentService.svc?disco" />
+    <MetadataFile FileName="CommentService2.xsd" MetadataType="Schema" ID="fc9e7aff-97cd-4fb2-90b6-f899b19aade3" SourceId="1" SourceUrl="http://localhost:50115/Services/CommentService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

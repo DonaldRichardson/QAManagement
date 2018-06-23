@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5cf808d8-d9c6-4378-99c6-afcbefa0c895}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>QAManagement.Model</Name>
+    <RootNamespace>QAManagement.Model</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'VDebuf' ">
+    <OutputPath>bin\VDebuf\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'VDebug' ">
+    <OutputPath>bin\VDebug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'visual' ">
+    <OutputPath>bin\visual\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="false" />
+  <ItemGroup>
+    <Content Include="2a) Corporate Usage Analysis.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="2a) Corporate Usage Analysis.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>2a) Corporate Usage Analysis.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="2b%29 Tester Usage Analysis.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="2b%29 Tester Usage Analysis.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>2b) Tester Usage Analysis.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Planning.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Planning.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Planning.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Cases\Logon.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Cases\Logon.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Cases\Logon.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Cases\Manage Company Details.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Cases\Manage Company Details.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Cases\Manage Company Details.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Use Cases\Manage Project Details.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Use Cases\Manage Project Details.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Use Cases\Manage Project Details.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\QAManagement.Model.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Use Cases" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="3) Architecture.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="3) Architecture.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>3) Architecture.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="3) Architecture.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>3) Architecture.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

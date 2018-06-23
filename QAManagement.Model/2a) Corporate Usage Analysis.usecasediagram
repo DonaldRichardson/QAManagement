@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="24f7997f-0e98-4a6d-a2b8-282b6ad62d48" name="2) Usage Analysis" linkedPackageId="edfbfa16-4a4a-40eb-9c21-f0a242836282" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="db6d94b4-88b4-4d31-be0e-2d5a887473a8">
+      <profileInstance Id="8d7c05b2-8555-4338-a955-5b35abd0f7fd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="01643aef-f45b-4db6-b0b7-7528ab017983">
+      <profileInstance Id="daea6f4f-3c47-4b4f-beb7-0a3f24a0c712" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7db1b659-8bd2-4cb1-b0d4-a3ccf4cb1fb2" name="External Corporate Testing Manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="46176a16-c006-4d53-9d40-f5dda55a18e7" />
+        <targetEnds>
+          <association Id="4a42b012-322f-432f-8ba9-15322a17b7a0" isDerived="false" sourceEndRoleName="External Corporate Testing Manager" targetEndRoleName="Logon to QA Management Site" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2204b063-5c69-4380-a996-66a008a972ed" LastKnownName="Logon to QA Management Site" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="725f2feb-7b4d-4096-9936-94252eef5a68" name="External Corporate Testing Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e8a318a1-d2af-4d7f-a61c-897cc8b342b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="acca6f10-6819-4076-bb64-2d9d30db9175" name="Logon to QA Management Site" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4ee32190-ea0d-46ef-8d2e-6a0b71900dad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7c15ed33-b910-480c-83a9-f41e743e14de" />
+          </association>
+          <association Id="8d28afae-c087-4585-8619-5c2d67a25632" isDerived="false" sourceEndRoleName="External Corporate Testing Manager" targetEndRoleName="Manage Company Details" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6e2b1eb4-53bb-4133-a1eb-2a4c358fcdb0" LastKnownName="Manage Company Details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5828183-79c3-433e-be62-7c91c921ccc3" name="External Corporate Testing Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f7e0f083-a414-454d-860d-475e03078ed2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="70244e16-3c06-4cb8-8d6e-a2eaccd6f3dd" name="Manage Company Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1bfa4d62-7cdd-4623-bbb6-7c227cc775bc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="30e933d8-edff-4e4f-b82e-ad80491c4532" />
+          </association>
+          <association Id="404a1350-4d10-419f-8d17-2fb3753c170b" isDerived="false" sourceEndRoleName="External Corporate Testing Manager" targetEndRoleName="Manage Project Details" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bb73887f-f936-4944-a2ae-864a108e9604" LastKnownName="Manage Project Details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d37772a3-c74c-4c67-9f39-71dfcc219ed6" name="External Corporate Testing Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="29edd3c9-3c0e-4246-9dcd-a985bf6c74c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="37d02758-5094-4dcb-91b5-10baf3457e09" name="Manage Project Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="33425ebd-f06d-449b-9a9b-c04cc62ba65d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="67d8b032-2eb7-4248-9afb-9eb4c771affe" />
+          </association>
+          <association Id="d2153cfc-b34a-49cb-a52a-af13c5c5fab3" isDerived="false" sourceEndRoleName="External Corporate Testing Manager" targetEndRoleName="View Reports" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9d36b1c8-5472-459c-b0a5-c70ad7833e70" LastKnownName="View Reports" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f132877e-ad5a-482e-9d06-bcfc839cc746" name="External Corporate Testing Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="69c0ba96-0264-4844-b49e-3951b330eed2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6839ecd4-6cd2-492f-a276-b636532b0e3b" name="View Reports" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="56b02e21-e899-4ddc-92c0-074f35fdff40" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="150eb86b-c39a-4d33-8671-15d5d59a2666" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2204b063-5c69-4380-a996-66a008a972ed" name="Logon to QA Management Site" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16c1b40d-e49b-48b8-a4e6-2da3d0e16de8" />
+        <additions>
+          <include Id="9f07063e-1f01-42ad-8f1a-358a027c5b04">
+            <useCaseMoniker Id="99c42c7c-2fd4-4b2f-a0ee-5a32c93d239c" LastKnownName="Password Management" />
+            <elementDefinition Id="fcbff8c0-63d5-4c17-8f96-0d807dcb8811" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6e2b1eb4-53bb-4133-a1eb-2a4c358fcdb0" name="Manage Company Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="51467779-6194-4c46-850f-62d6a9ab15b7" />
+        <additions>
+          <include Id="027955cc-1e22-4707-b2c6-6f1ede85ec6c">
+            <useCaseMoniker Id="c8d50227-f22f-48ee-af8d-9c49416b515f" LastKnownName="CRUD Company Details" />
+            <elementDefinition Id="8ab88a96-21c7-4cc3-9740-5395969ae5a0" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bb73887f-f936-4944-a2ae-864a108e9604" name="Manage Project Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="054d3023-8d83-4700-81d3-24363a3a656f" />
+        <additions>
+          <include Id="2d03cb67-6061-4eee-82df-144ee62f3360">
+            <useCaseMoniker Id="55cfe2ba-50b4-46cf-8678-2a036f4c9b73" LastKnownName="CRUD Projects" />
+            <elementDefinition Id="b2da2102-5d1f-47e2-8880-382ccbb895c5" />
+          </include>
+          <include Id="ee657f8a-c60a-494d-81c8-1d9224792c6a">
+            <useCaseMoniker Id="f5eef494-9533-445b-9490-afd3025cd426" LastKnownName="CRUD Requirements" />
+            <elementDefinition Id="912a29f2-5fae-462e-b2df-b51682efde49" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9d36b1c8-5472-459c-b0a5-c70ad7833e70" name="View Reports" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e25928fe-8489-4c53-a3a7-6facc16346f1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="99c42c7c-2fd4-4b2f-a0ee-5a32c93d239c" name="Password Management" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f5be84bd-16bb-4048-9bad-4253cd768563" />
+        <additions>
+          <include Id="28b6266c-8c72-498e-8467-d489a2fad8c1">
+            <useCaseMoniker Id="ee72b493-229f-40d9-bf54-d99d2573775a" LastKnownName="Reset Passwords" />
+            <elementDefinition Id="85630f21-2bfb-4c29-965f-9f3714e0f3ae" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ee72b493-229f-40d9-bf54-d99d2573775a" name="Reset Passwords" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1e2fec19-e971-49eb-b4d4-0ee790779b74" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c8d50227-f22f-48ee-af8d-9c49416b515f" name="CRUD Company Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fbbe6ae1-fc0c-4f7f-a951-0175663895a0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="55cfe2ba-50b4-46cf-8678-2a036f4c9b73" name="CRUD Projects" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="67ab4806-e484-47e1-a5da-0e8c6668b291" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f5eef494-9533-445b-9490-afd3025cd426" name="CRUD Requirements" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="80c2efd9-94b4-4788-9c63-a6be3951c3e4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="edfbfa16-4a4a-40eb-9c21-f0a242836282" name="QAManagement.Model">
+    <elementDefinition Id="cba51ad3-2442-4ba7-8f4b-31e5d52a3c00" />
+  </package>
+</useCaseModelRoot>

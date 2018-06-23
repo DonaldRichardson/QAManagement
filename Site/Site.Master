@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Site.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 91px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <table cellpadding="0" cellspacing="0" class="style1">
+                <tr>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td align="right">
+                        <asp:LinkButton ID="lnkChangeMode" runat="server" onclick="lnkChangeMode_Click" 
+                            Font-Names="arial" Font-Size="X-Small">Normal Mode</asp:LinkButton>
+                    </td>
+                    <td align="right">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="left" class="style2" valign="top">
+                        <asp:Menu ID="Menu1" runat="server">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Pages/Company.aspx" Text="Companies" 
+                                    Value="Companies"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pages/Project.aspx" Text="Projects" 
+                                    Value="Projects"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pages/Requirement.aspx" Text="Requirements" 
+                                    Value="Requirements"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                    <td align="left" valign="top">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+           
+        
+        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td align="right">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td align="right">
+                        &nbsp;</td>
+                </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>

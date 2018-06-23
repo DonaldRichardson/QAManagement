@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c0a0653a-3a2b-4124-bd91-724ba6366ee7" name="Manage Company Details" linkedPackageId="1459e308-32da-4ef3-93b0-aa7687e1e8ef" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="1d4ca732-8844-488b-9ac9-816ff1e8554f">
+      <profileInstance Id="98e251be-abb8-42a8-87d3-7e50d9eda135" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a057db91-4186-4bab-81f5-1685ed406db9">
+      <profileInstance Id="2c32015f-ddba-4f9c-a437-e532505dd93e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="0a966e01-ed18-4631-b700-faec62d30fdf" name="External Corporate Testing Manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="46176a16-c006-4d53-9d40-f5dda55a18e7" />
+        <targetEnds>
+          <association Id="a8bcfa41-4ceb-4a87-9a4e-a14e859e3f10" isDerived="false" sourceEndRoleName="External Corporate Testing Manager" targetEndRoleName="Manage Company Details" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="62942207-76a3-4633-a6e9-a55babab2514" LastKnownName="Manage Company Details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60897827-b17f-4e7f-a149-40abdbc62ecd" name="External Corporate Testing Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f7e0f083-a414-454d-860d-475e03078ed2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e8ec8010-a897-48b0-85e1-5b4a89026bc7" name="Manage Company Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1bfa4d62-7cdd-4623-bbb6-7c227cc775bc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="30e933d8-edff-4e4f-b82e-ad80491c4532" />
+          </association>
+          <association Id="18234262-ae49-486b-bda6-4703ee522eab" isDerived="false" sourceEndRoleName="External Corporate Testing Manager" targetEndRoleName="Manage Project Details" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fd3d0931-f489-47ab-ac1f-57213d480c05" LastKnownName="Manage Project Details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3297d49e-db42-409a-8373-4ff1eae14c8e" name="External Corporate Testing Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="29edd3c9-3c0e-4246-9dcd-a985bf6c74c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7eedf32c-0f80-426f-b8c1-2d46af91efe4" name="Manage Project Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="33425ebd-f06d-449b-9a9b-c04cc62ba65d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="67d8b032-2eb7-4248-9afb-9eb4c771affe" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="62942207-76a3-4633-a6e9-a55babab2514" name="Manage Company Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="51467779-6194-4c46-850f-62d6a9ab15b7" />
+        <additions>
+          <include Id="6cf194e4-e37d-4862-943f-d679a3d3ad72">
+            <useCaseMoniker Id="7cefca85-ca52-405b-a71d-6395ebbc14ba" LastKnownName="CRUD Company Details" />
+            <elementDefinition Id="8ab88a96-21c7-4cc3-9740-5395969ae5a0" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7cefca85-ca52-405b-a71d-6395ebbc14ba" name="CRUD Company Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fbbe6ae1-fc0c-4f7f-a951-0175663895a0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fd3d0931-f489-47ab-ac1f-57213d480c05" name="Manage Project Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="054d3023-8d83-4700-81d3-24363a3a656f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="1459e308-32da-4ef3-93b0-aa7687e1e8ef" name="QAManagement.Model">
+    <elementDefinition Id="cba51ad3-2442-4ba7-8f4b-31e5d52a3c00" />
+  </package>
+</useCaseModelRoot>

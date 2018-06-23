@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="f2e3ed19-3143-4230-86e8-86c10ad6aeab" name="2b) Tester Usage Analysis" linkedPackageId="069e9783-ea51-4ba2-af43-1668331463dd" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="873e2c05-b6be-411e-a603-bd4efb70ce2b" name="External Tester" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e4013050-674f-4108-bcd8-36a8e97648b1" />
+        <targetEnds>
+          <association Id="7ca582ac-3715-40ba-9527-fe73251a3c41" isDerived="false" sourceEndRoleName="External Tester" targetEndRoleName="Manage Username and password" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="048696c0-12e0-4c43-b128-f428465cdf0f" LastKnownName="Manage Username and password" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="10fd0348-8668-4f58-934a-0f4cd9dc3f86" name="External Tester" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5882a634-634d-4f93-9e21-a6f954c0dc08" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a18f00c-4311-4ab0-8167-bf5ae5c868dc" name="Manage Username and password" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="26d0038e-03be-45a7-9ea3-94d211bf6d1f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8e299eef-6b3d-4ff2-8525-f96989bf8bbf" />
+          </association>
+          <association Id="5186e870-4cbc-469c-92dc-901dc877ad26" isDerived="false" sourceEndRoleName="External Tester" targetEndRoleName="View Reports" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="217eb9c2-db06-4ce1-a4bc-6c84b4e2e086" LastKnownName="View Reports" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2620a8c-237a-4b37-a4e9-e28d6201ab83" name="External Tester" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1540d4e8-29d7-419e-992f-245478d31318" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f6f253e-7afc-4bf4-bbd5-b2b517a3af45" name="View Reports" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="454c4f55-e179-436a-9085-30653c1b2839" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="46b2d34c-8e73-41c2-8175-fb2c0af28c73" />
+          </association>
+          <association Id="3a1f0697-5b09-48a7-a76a-90561d1e2517" isDerived="false" sourceEndRoleName="External Tester" targetEndRoleName="Manage User Details" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fa4e3232-4e44-49bb-8d40-7667230885dc" LastKnownName="Manage User Details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d12909ec-27c9-4873-b73c-92a10d30ce00" name="External Tester" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="654c49d9-8efd-40cb-bba8-53e1279a13c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c4f396bf-fd28-4793-90ee-1fea06ce5239" name="Manage User Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="df06299f-48a8-4403-9620-6c459f6ca69b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6db9eab3-5d15-4673-88a6-0c7526e9fd1d" />
+          </association>
+          <association Id="d44a92a9-fba8-460f-9a78-6412163d83d2" isDerived="false" sourceEndRoleName="External Tester" targetEndRoleName="Manage Remuneration Points" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="716ebd67-ad0d-43a8-a91a-d9bbce7257c5" LastKnownName="Manage Remuneration Points" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2fc18c37-fabe-4aef-b333-5badc861c934" name="External Tester" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d7529d12-a20b-4f54-aeb5-1e7954bb40aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c50eb0a1-aab3-4371-b461-146ee8cb19b0" name="Manage Remuneration Points" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a74d24cd-4542-48ee-a285-2623c32e6d54" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ed463d1b-2d90-480c-9ddd-a5696a6d6534" />
+          </association>
+          <association Id="ca46c914-7ed0-441a-8b46-194e01de3d5e" isDerived="false" sourceEndRoleName="External Tester" targetEndRoleName="Manage User Testing" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d6404498-f101-4bf0-b04b-4ea26e85edf2" LastKnownName="Manage User Testing" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6733df58-9abb-4964-a3a0-d84876843f21" name="External Tester" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fbe2bb12-316f-477f-8805-dce50d9a9d78" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ddf3c67-d5ee-4d61-9677-2c0ba3f8aa8a" name="Manage User Testing" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="23263ae6-32f1-43a0-be00-b9ff910222ca" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5d381abd-af55-488d-b25d-062bc0b35644" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e2efcc9d-5f9b-4ca7-b027-d4d493b7218a" name="CRUD User Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d31f961-7de6-4941-a542-9c59369d9f69" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="048696c0-12e0-4c43-b128-f428465cdf0f" name="Manage Username and password" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f49969d7-339b-4e08-9a18-91fa49121c92" />
+        <additions>
+          <include Id="f9ac09b7-b488-4371-aa67-241b3d7a5ac6">
+            <useCaseMoniker Id="e2efcc9d-5f9b-4ca7-b027-d4d493b7218a" LastKnownName="CRUD User Details" />
+            <elementDefinition Id="8c4d1cfa-36af-42b1-9fb3-fc948ac7ebce" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="217eb9c2-db06-4ce1-a4bc-6c84b4e2e086" name="View Reports" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e25928fe-8489-4c53-a3a7-6facc16346f1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b7edbdf9-9637-4c66-b115-1aa49035abcf" name="Start Testing" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ecfe9242-94be-43b4-b7ca-3fff733e0487" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b401650e-faee-420b-b0d4-0ee23dbb9d34" name="Resume Testing" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="86e1ea59-b772-402b-8fdf-521fa920b224" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6d223b52-37c7-4da8-8e83-b27d2097591d" name="Re-Testing or test iterations" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d9598b99-c234-4938-888c-352ed8fce0f0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fa4e3232-4e44-49bb-8d40-7667230885dc" name="Manage User Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c4fc1f82-339d-4520-86fe-d1f3c8dc35d9" />
+        <additions>
+          <include Id="a7e0e9d9-9401-449e-bbf3-f0a8e376ed84">
+            <useCaseMoniker Id="0baa006e-4eb9-4da8-8620-f0c090d639e0" LastKnownName="CRUD User Details" />
+            <elementDefinition Id="04c6be1b-89d2-4ad6-a7bc-1cdf3e445058" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="716ebd67-ad0d-43a8-a91a-d9bbce7257c5" name="Manage Remuneration Points" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c6a3810-40ca-4360-9e43-893b3779d32c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0baa006e-4eb9-4da8-8620-f0c090d639e0" name="CRUD User Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8cafdac9-281e-44a5-8bf1-ab7222af6637" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d6404498-f101-4bf0-b04b-4ea26e85edf2" name="Manage User Testing" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4e09f3cb-f8d7-46b8-8388-96f49094860a" />
+        <additions>
+          <include Id="08170e25-d894-4bae-b573-ae3914697ea6">
+            <useCaseMoniker Id="b7edbdf9-9637-4c66-b115-1aa49035abcf" LastKnownName="Start Testing" />
+            <elementDefinition Id="46f38877-0270-4dca-94b5-467b4e125fe5" />
+          </include>
+          <include Id="524a157e-1d16-496f-af22-204ecf895170">
+            <useCaseMoniker Id="b401650e-faee-420b-b0d4-0ee23dbb9d34" LastKnownName="Resume Testing" />
+            <elementDefinition Id="5a1f7c70-799f-4f08-a249-92693b20915e" />
+          </include>
+          <include Id="10781abc-84c5-41e2-ac8e-1bedd3300823">
+            <useCaseMoniker Id="6d223b52-37c7-4da8-8e83-b27d2097591d" LastKnownName="Re-Testing or test iterations" />
+            <elementDefinition Id="b9b54583-ed71-44ae-9c74-667452e284d4" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="069e9783-ea51-4ba2-af43-1668331463dd" name="QAManagement.Model">
+    <elementDefinition Id="cba51ad3-2442-4ba7-8f4b-31e5d52a3c00" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c19b281e-46b4-4d4a-ac01-e7c4692b9883">
+        <profileInstance Id="2de5a9ba-e076-46ce-ac56-57df7da10c7e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6a684b71-bac1-4e31-b3dd-3d93469187cf">
+        <profileInstance Id="ef7608bb-73d1-4caa-95db-b14c1b6c5932" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
